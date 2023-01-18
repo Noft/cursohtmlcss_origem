@@ -1,0 +1,197 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Tudo sobre google glass</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css">
+        <!--<style>
+            body {
+                /*background-image: url("fundo.jpg");*/
+                /*background-color: #8bb8ff;*/
+                background-color: hsl(193, 100%, 43%);
+                color: rgba(0, 0, 0, 0.5);/*Ultimo numero da sequencia rgba informa a transparencia variando de 0(opaco) a 1(transparente)*/
+            }
+            p {
+                text-align: justify;
+                text-indent: 50px;
+            }*/
+        </style>-->
+    </head>
+    <script language="javascript" src="javascript/funcoes.js">/*O parametro language informa o linguagem de programação utilizada mas para o html o javascript é o padrão e portanto não é necessário informar*/
+        /*function mudaFoto (foto) {
+            document.getElementById("icone").src = foto;
+        }*/
+    </script>
+    <body>
+        <div id="interface">
+            <header id="cabecalho"> <!--não usar acentuação ou pontução para identificar tags e arquivos e pastas-->
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do google está chegando</h2>
+                </hgroup>
+                
+                <img id="icone" src="imagens/oculos.png">
+
+                <nav id="menu">    
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li onmouseover="mudaFoto('imagens/casa.png')"onmouseout="mudaFoto('imagens/oculos.png')"><a href="index.html">Home</a></li>
+                        <li onmouseover="mudaFoto('imagens/luvas.png')" onmouseout="mudaFoto('imagens/oculos.png')"><a href="especificacoes.html">Especificações</a></li>
+                        <li onmouseover="mudaFoto('imagens/camera.png')" onmouseout="mudaFoto('imagens/oculos.png')"><a href="fotos.html">Fotos</a></li>
+                        <li onmouseover="mudaFoto('imagens/filmadora.png')" onmouseout="mudaFoto('imagens/oculos.png')"><a href="multimidia.html">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('imagens/telefone.png')" onmouseout="mudaFoto('imagens/oculos.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <section id="corpo">
+                <article id="noticia-principal">
+                    <header id="cabecalho-artigo">
+                        <hgroup>
+                            <h3>Tecnologia&nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;&nbsp; Inovações</h3>
+                            <h1>Saiba tudo sobre o Google Glass</h1>
+                            <h2>por Gustavo Guanabara</h2>
+                            <h3 class="direita">Atualizado em 13/12/2022</h3>
+                        </hgroup>
+                    </header>
+                    <!-- O <wbr/> gera uma quebra de linha no meio de uma palavra quando há um redimensionamento de tela que força o ajuste do posicionamento do texto.-->
+                    <!-- O &shy; permite a quebra no meio da palavra acrescentando o hífen após a quebra.-->
+
+                    <p>Exemplos <sub>de</sub> <sup>Formatação</sup></p>
+                    <p>x<sup>2</sup> e H<sub>2</sub>O</p>
+
+                    <pre class="php">
+                        <code>
+<!--                -->#include &lt;iostream&gt;
+<!--                -->    int main() {
+<!--                -->        cout &lt;&lt; "Olá, Mundo!";
+<!--                -->        return 0;
+<!--                -->    }
+                        </code><!--Tag <code> formata o texto exibido como um codigo-->
+                    </pre><!--Tag <pre> apresenta o texto como foi digitado-->
+
+                    <h2>Lorem ipsum</h2>
+                    <p id="paragrafo1"><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit. In ac tempor felis, id eleifend purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc tincidunt elit non accumsan maximus. <a href="http://google.com" target="_blank" style="color: red;">Quisque</a><!--O target com o parametro _blank permite que o link seja aberto em uma nova aba e o _self é o valor padrao que abr o link na mesma aba--> eu urna diam. Aenean lectus ipsum, iaculis ac nunc vel, accumsan volutpat risus. Nam gravida, est congue volutpat pulvinar, ipsum magna iaculis elit, consectetur posuere nulla sem a odio. In hac habitasse platea dictumst. Donec nisl purus, facilisis at massa quis, gravida hendrerit libero. <i>Phasellus</i> feugiat est justo, eu maximus nisl blandit in.</p>
+
+                    <figure class="foto-legenda">
+                        <img src="imagens/fundo2.jpg"><!--O parametro (widht="") modifita o tamanho da imagem na visualização do site mas não interfere no tamanho do arquivo da imagem-->
+                        <figcaption>
+                            <h3>Google Glass</h3>
+                            <p>Uma nova maneira de ver o mundo.</p>
+                        </figcaption>
+                    </figure>
+
+                    <h2>Especificações Técnicas</h2>
+                    <table id="tabelaspec">
+                        <caption>Tabela Técnica do Google Glass <span>Mar/2013</span></caption>
+
+                        <tr><td class="ce">Tela</td><td class="cd">Resolução equivalente a tela de 25"</td></tr>
+                        <tr><td rowspan="2" class="ce">Camera</td> <td class="cd">5MP para fotos</td></tr>
+                        <tr><td class="cd">720p para videos</td></tr>
+                        <tr><td colspan="2">Linha extra</td></tr>
+                        <tr><td rowspan="2" class="ce">Conectividade</td><td class="cd">Wi-Fi</td></tr>
+                        <tr><td class="cd">Bluetooth</td></tr>
+                        <tr><td class="ce">Memória Interna</td><td class="cd">12GB</td></tr>
+                    </table><!--A tag <tr> representa uma linha, a tag <td> representa uma celula e o parâmetro rowspan em uma tag <td> representa a mescla de linhas utilizadas por aquele dado e entre "" o numero de linhas mescladas-->
+                    <!--O parãmetro colspan funciona como o rowspan mas mescla colunas ao invés de linhas-->
+                    <h2 style="text-align: center">Lorem ipsum2</h2> <!--Pode usar Left para posicionar a esquerda(padrão) e riht para posicionar o testo a direita-->
+                    <p style="text-align: justify; text-indent: 50px;"><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit. Donec sem metus, posuere et dignissim vitae, porta sit amet nunc. In <span style="text-decoration: underline;">vestibulum</span> risus metus, in semper massa placerat at. <em>Integer</em> aliquet ante ante, eget cursus massa lacinia eu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin <a href="https://www.youtube.com/" target="_blank">cursus</a> risus vel <u>nulla</u> eleifend, in ultrices urna congue. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc sit amet dui <span style="font-weight:bold;">viverra</span>, commodo erat vitae, tincidunt odio. Duis urna neque, malesuada in pretium mattis, suscipit ut sem. Pellentesque molestie ac est vel interdum. Etiam commodo pulvinar nibh eu viverra. Praesent a lacinia nunc, sed <del>consectetur</del> <s>nulla</s>. Duis vitae cursus ante.</p>
+                    <!--A tag <em> significa ênfase e visualmente se assemelha com o italico-->
+                    <!--A tag <u> e a tag <s> foram depreciadas e ainda que funcionem não devem ser usadas. A tag <del> substitui a tag <s>-->
+                    <!--Utilize a tag <span> para aplicar a formatação com CSS-->
+
+                    <div id="tv-radio">
+                        <video id="filme" controls="controls" poster="imagens/video-mini03.jpg">
+                            <source src="media/stand-on-an-egg.mp4" type="video/mp4">
+                            <source src="media/stand-on-an-egg.webm" type="video/webm">
+                            <source src="media/stand-on-an-egg.ogv" type="video/ogg">
+                            Desculpe, mas não foi possivel carregar o video.
+                        </video>
+                    </div>
+                </article>
+            </section>
+            <aside id="lateral">
+                <h1>Outras notícias</h1>
+                <h2>Vídeo mais recente</h2>    
+
+                <div id="tv-radio">
+                    <video id="filme" controls="controls" poster="imagens/video-mini03.jpg">
+                        <source src="media/que-viajem-e-essa.mp4" type="video/mp4">
+                        <source src="media/que-viajem-e-essa.webm" type="video/webm">
+                        <source src="media/que-viajem-e-essa.ogv" type="video/ogg">
+                        Desculpe, mas não foi possivel carregar o video.
+                    </video>
+                </div>
+
+                <h2>Lista não ordenada</h2>
+                <ul type="square"><!--Possui também os tipos circle e o tipo disc que é o padrão-->
+                    <li>Teste1</li>
+                    <ol type="I" start="3"><!--Tipo 1 numerico, tipo a alfabetico(maiusculo ou minusculo), tipo i numeros romanos(maiusculos ou minusculos)-->
+                        <li>Subtest12</li>
+                        <li>Subteste22</li>
+                    </ol>
+                    <li>Teste2</li>
+                    <li>Teste3</li>
+                    <ul type="square">
+                        <li>Subteste1</li>
+                        <li>Subteste2</li>
+                        <li>Subteste3</li>
+                    </ul>
+                    <li>Teste4</li>
+                    <li>Teste5</li>
+                    <ul><!--Quando o parametro type não é informado ele altera altomaticamente o formato dos pontos para diferenciar podendo ser alterado manualmente-->
+                        <li>Subteste31</li>
+                        <li>Subteste32</li>
+                    </ul>
+                </ul>
+
+                <h2>Símbolos especiais</h2>
+                    <p>
+                        &lt; <!--menor que "<" -->
+                        &gt; <!--maior que ">" -->
+                        &le; <!--menor ou igual "<=" -->
+                        &ge; <!--maior ou igual ">=" --><br/>
+
+                        &pound; <!--libra-->
+                        &yen;
+                        &euro;<br/>
+
+                        &copy; <!--Simbolo de copyright-->
+                        &reg; <!--Marca registrada-->
+                        &trade; <!--Trademark--><br/>
+
+                        &permil; <!--Simbolo de dividido por mil-->
+                        &sum; <!--Soma-->
+                        &infin; <!--Infinito-->
+                        &times; <!--Multiplicação-->
+                        &plusmn;; <!--Simbolo de mais e menos-->
+                        &oplus; <!--Simbolo de mais em um circulo -->
+                        &radic; <!--Raiz quadrada-->
+                        &ne; <!--Diferente--><br/>
+
+                        &delta; <!--delta (minusculo) para por maiusculo utilizar com o "D" serve para as demias letras do alfabeto-->
+                        &lambda;
+                        &omega;
+                        &phi;<br/>
+
+                        &larr; <!--Seta para esquerda(Primeira letra quando maiuscula insere uma seta diferente)-->
+                        &rarr; <!--Seta para direita-->
+                        &uarr; <!--Seta para cima-->
+                        &darr; <!--Seta para baixo-->
+                        &harr; <!--Seta para os dois lados--><br/>
+
+                        &spades; <!--Simbolo de espadas-->
+                        &clubs; <!--Simbolo de paus-->
+                        &hearts; <!--Simbolo de copas-->
+                        &diams; <!--Simbolo de ouros-->
+                    </p>
+            </aside>
+            <footer id="rodape">
+                <p>
+                    Copyright &copy; 2013 - by Gustavo Guanabara<br/> <a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> | <a href="https://twitter.com/" target="_blank">Twitter</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

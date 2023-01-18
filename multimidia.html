@@ -1,0 +1,66 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Multimídia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/estilo.css" rel="stylesheet" type="text/css">
+        <link href="css/media.css" rel="stylesheet" type="text/css">
+    </head>
+    <script language="javascript" src="javascript/funcoes.js"></script>
+    <body>    
+        <div id="interface">
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Multimídia</h1>
+                    <h2>A revolução do Google está chegando</h2>           
+                </hgroup>
+                <img id="icone" src="imagens/filmadora.png">
+                
+                <nav id="menu">    
+                    <h1>Menu Principal</h1>
+                    <ul>
+                        <li onmouseover="mudaFoto('imagens/casa.png')"onmouseout="mudaFoto('imagens/filmadora.png')"><a href="index.html">Home</a></li>
+                        <li onmouseover="mudaFoto('imagens/luvas.png')" onmouseout="mudaFoto('imagens/filmadora.png')"><a href="especificacoes.html">Especificações</a></li>
+                        <li onmouseover="mudaFoto('imagens/camera.png')" onmouseout="mudaFoto('imagens/filmadora.png')"><a href="fotos.html">Fotos</a></li>
+                        <li onmouseover="mudaFoto('imagens/filmadora.png')" onmouseout="mudaFoto('imagens/filmadora.png')"><a href="multimidia.html">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('imagens/telefone.png')" onmouseout="mudaFoto('imagens/filmadora.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="corpo-full">
+                <article id="noticia-principal">
+                    <header id="cabecalho-artigo">
+                        <hgroup>    
+                            <h3>Glass&nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;&nbsp;Multimídia</h3>
+                            <h1>Sons e Vídeos</h1>
+                            <h2>por Gustavo Guanabara</h2>
+                            <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+                        </hgroup>
+                    </header>
+                    <div id="tv-radio">
+                        <audio id="musica" controls="controls">
+                            <source src="media/machi-no-dorufin.mp3" type="audio/mpeg"><!--O Formato do arquivo de audio compativel varia de acordo com o navegador por isso inserimos os tres formatos-->
+                            <source src="media/machi-no-dorufin.m4a" type="audio/x-aac">
+                            <source src="media/machi-no-dorufin.ogg" type="audio/ogg">
+                            Desculpe, mas não foi possivel carregar o áudio.<!--Essa frase dentro dessa tag só será exibida caso o navegador não seja compativel com nenhum dos formatos de audio e ou video-->
+                        </audio>
+                        <!--<video id="filme" controls="controls" poster="imagens/video-mini03.jpg">
+                            <source src="media/carls-sagan-4-dimensao.mp4" type="video/mp4">
+                            <source src="media/carls-sagan-4-dimensao.webm" type="video/webm">
+                            <source src="media/carls-sagan-4-dimensao.ogv" type="video/ogg">
+                            Desculpe, mas não foi possivel carregar o video.
+                        </video>-->
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/UJtUheLZGMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    
+                </article>
+            </section>        
+            <footer id="rodape">
+                <p>
+                    Copyright &copy; 2013 - by Gustavo Guanabara<br/> <a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> | <a href="https://twitter.com/" target="_blank">Twitter</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
